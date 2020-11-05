@@ -1,0 +1,33 @@
+.container {
+    width: 400px !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+.title {
+    background-color: #f7f9fa;
+}
+.content {
+    background-color: white;
+}
+.action {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f7f9fa;
+}
+.padding-box {
+    padding: 1rem 2rem;
+}
+#texttitle {
+    font-size: x-large;
+    font-weight: bold;
+}
+#textcontent{
+    font-size: smaller;
+}
+#confirmbutton{
+    background-color: #428CDD;
+    color: white;
+}
+hr {
+    margin: 0;
+}

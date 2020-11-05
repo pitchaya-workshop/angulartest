@@ -1,0 +1,13 @@
+@import '../preview.component.scss';
+
+.tokendata{
+    background-color: white;
+    padding:15px;
+    overflow: auto;
+    border-radius: 6px;
+}
+.logoutbutton{
+    margin: 1rem 0;
+    position: relative;
+    text-align: right;
+}

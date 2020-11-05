@@ -1,0 +1,21 @@
+@import '../preview.component.scss';
+.userdata{
+    background-color: white;
+    flex-direction: row;
+    padding:15px;
+    overflow: auto;
+    border-radius: 6px;
+    .userimg{
+        text-align: center;;
+        flex-grow: 1;
+    }
+    .userdetail{
+        flex-grow: 2;
+    }
+}
+img{
+    height: 200px;
+    width: auto;
+}
+
+

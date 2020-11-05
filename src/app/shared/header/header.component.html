@@ -1,0 +1,21 @@
+<div class="d-block header">
+    <div class="navbar">
+        <div class="logo">
+            <div class="navband">
+                <img src="../../../assets/img/angular-card.png">
+            </div>
+        </div>
+        <div class="icon">
+            <div class="navicon">
+                <button class="backnone" (click)="toggle()">
+                    <mat-icon [@togicon]="isOpen ? 'open' : 'closed'">{{isOpen?'menu_open':'menu'}}</mat-icon>
+                </button>
+            </div> 
+        </div>
+        <!-- <div class="menu">
+            <div class="menuitem">
+                <button mat-raised-button (click)="logout()">LOGOUT</button>
+            </div>
+        </div> -->
+    </div>
+</div>

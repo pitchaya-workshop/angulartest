@@ -1,0 +1,43 @@
+.sidebar {
+    background-color: #494D55;
+    border-radius: 0;
+    bottom: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: fixed;
+    top: 80px;
+    width: 235px;
+    left: -235px;
+    transition: 1s;
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+}
+.active {
+    left: 0;
+    transition: 1s;
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    li {
+        outline: 0;
+        cursor: pointer;
+        &:hover {
+            color: white;
+            background-color: #31343A;
+            font-weight: 600;
+        }
+    }
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+    }
+}
+.nav-item {
+    position: relative;
+    padding: 1rem;
+}
+// .nav-link {
+// }

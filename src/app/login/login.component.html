@@ -1,0 +1,32 @@
+<div class="container container-fluid positionBox">
+    <div class="registrationFormContainer">
+        <fieldset class="loginBox">
+            <div class="d-flex flex-row flex-center m-1rem">
+                <div class="d-flex align-center">
+                    <img id="logopanda" src="../../assets/img/PastedGraphic-1.png">
+                    <div class="p-5px">
+                        <span id="head1" class="m-0 d-block">{{head1}}</span>
+                        <span id="head2" class="m-0">{{head2}}</span>
+                    </div>
+                </div>
+            </div>
+            <div class="full-width">
+                <form [formGroup]="login_form" (ngSubmit)="onLogin()">
+                    
+                    <mat-form-field class="example-full-width">
+                        <mat-label>username</mat-label>
+                        <input id="username" type="text" matInput placeholder="username" formControlName="username">
+                    </mat-form-field>
+                    <mat-form-field class="example-full-width">
+                        <mat-label>password</mat-label>
+                        <input id="password" type="password" matInput placeholder="password" formControlName="password">
+                        <mat-icon matSuffix class="cursor-point" (mousedown)="showPassword($event)" (mouseup)="showPassword($event)">visibility_off</mat-icon>
+                    </mat-form-field>
+                    <span class="error">{{error_login}}</span>
+                    <button type="submit" id="Loginbutton" mat-raised-button 
+                    class="full-width" [disabled]="!login_form.valid" >Login</button>
+                </form>
+            </div>
+        </fieldset>
+    </div>
+</div>

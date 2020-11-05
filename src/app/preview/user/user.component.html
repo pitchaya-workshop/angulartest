@@ -1,0 +1,48 @@
+<div class="infocontainer">
+    <div class="infobox">
+        <div class="d-flex userdata">
+            <div class="userimg">
+                <img src="{{userdata?.sex == 'M'?'../../assets/img/Male.png':'../../assets/img/Female.png'}}">
+            </div>
+            <div class="userdetail">
+                 <table class="info">
+                      <th>User Info</th>
+                    <tr>
+                      <td>User</td>
+                      <td>{{userdata?.userId}}</td>
+                    </tr>
+                    <tr>
+                      <td>ชื่อ-นามสกุล</td>
+                      <td>{{userdata?.fullNameTh}}</td>
+                    </tr>
+                    <tr>
+                      <td>Name</td>
+                      <td>{{userdata?.fullNameEn}}</td>
+                    </tr>
+                    <tr>
+                      <td>Sex</td>
+                      <td>{{userdata?.sex == 'F'?'Female':userdata?.sex == 'M'?'Man':'Etc'}}</td>
+                    </tr>
+                    <tr>
+                      <td>ตำแหน่ง</td>
+                      <td>{{userdata?.roleTh}}</td>
+                    </tr>
+                    <tr>
+                      <td>Position</td>
+                      <td>{{userdata?.roleTh}}</td>
+                    </tr>
+                    <tr>
+                      <td>สาขา</td>
+                      <td>{{userdata?.branchTh}}</td>
+                    </tr>
+                    <tr>
+                      <td>Branch</td>
+                      <td>{{userdata?.branchEn}}</td>
+                    </tr>
+                  </table>
+            </div>
+
+        </div>
+
+    </div>
+</div>

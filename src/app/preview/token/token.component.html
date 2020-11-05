@@ -1,0 +1,34 @@
+<div class="infocontainer">
+  <div class="infobox">
+    <div class="tokendata">
+      <table class="info">
+        <th>Token Info</th>
+        <tr>
+          <td>User</td>
+          <td>{{tokendata?.userId}}</td>
+        </tr>
+        <tr>
+          <td>Scopes</td>
+          <td>{{tokendata?.scope}}</td>
+        </tr>
+        <tr>
+          <td>Create At</td>
+          <td>{{tokendata?.displaycreateAt}}</td>
+        </tr>
+        <tr>
+          <td>Expired</td>
+          <td>{{tokendata?.displayExpired}}</td>
+        </tr>
+        <tr>
+          <td>Expire in</td>
+          <td>
+            <span id="days"></span><span id="hours"></span><span id="mins"></span><span id="secs"></span>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="logoutbutton">
+      <button class="btn btn-danger" (click)="logout()">Logout</button>
+    </div>
+  </div>
+</div>
